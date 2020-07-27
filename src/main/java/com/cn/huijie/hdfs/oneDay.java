@@ -12,7 +12,7 @@ import java.net.URI;
 
 public class oneDay {
 
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
 
 
         Configuration conf = new Configuration();
@@ -28,11 +28,11 @@ public class oneDay {
           input   output
 
          */
-        FileInputStream fio = new FileInputStream(new File("C:\\Users\\Administrator\\Desktop\\hdfs命令.doc"));
-        FSDataOutputStream fos=fs.create(new Path("/lw/aa"));
-        IOUtils.copyBytes(fio,fos,conf);
-        IOUtils.closeStream(fos);
-        IOUtils.closeStream(fio);
+        //  FileInputStream fio = new FileInputStream(new File("C:\\Users\\Administrator\\Desktop\\hdfs命令.doc"));
+        //FSDataOutputStream fos=fs.create(new Path("/lw/aa"));
+        //IOUtils.copyBytes(fio,fos,conf);
+        //IOUtils.closeStream(fos);
+        //IOUtils.closeStream(fio);
 
         fs.close();
 
